@@ -10,7 +10,7 @@ def compute_error_for_line_given_points(b, m, points):
 		x = points[i, 0]
 		#get the y value
 		y = points[i, 1]
-		#get the difference, sqaure it and add it to the total
+		#get the difference, square it and add it to the total
 		totalError += (y - (m*x+b)) ** 2
 	#get the average
 	return totalError/float(len(points))
